@@ -1,4 +1,5 @@
 #WildBerries Cart Integration 
+
 Плагин интеграции корзины WildBerries для сайтов благотворительных фонодов, сделанных на WordPress
 
 ##Установка плагина
