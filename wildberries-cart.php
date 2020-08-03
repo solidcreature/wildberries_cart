@@ -58,7 +58,7 @@ function wbc_update_after_payment($token) {
 		foreach($data as $wb_product) {		 
 			$products_num = get_field('products_num',$cart_id); //Сколько товаров в корзине
 			$product_id = $wb_product -> id; //ID оплаченного товара
-			$products_bought =  $wb_product -> rnum; //rnum, или количество купленных всего товаров
+			$products_bought =  $wb_product -> rnum + $wb_product -> quantity; //итоговое количество купленных товаров после успешной оплаты заказа
 			
 			//В цикле ищем тот товар, который был оплачен и обновляем остаток
 			$counter = 1;
